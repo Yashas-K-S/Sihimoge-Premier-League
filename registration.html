@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sihimoge Premier League 2026 - Player Registration</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f2f4f7;
+            color: #222;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 30px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .header h1 {
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            margin: 5px 0;
+            color: #666;
+        }
+
+        .section {
+            margin-top: 30px;
+        }
+
+        .section h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 8px;
+        }
+
+        label {
+            display: block;
+            margin-top: 18px;
+            margin-bottom: 7px;
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .radio-group,
+        .checkbox-group {
+            margin-top: 8px;
+        }
+
+        .radio-group label,
+        .checkbox-group label {
+            font-weight: normal;
+            display: block;
+            margin: 8px 0;
+        }
+
+        .radio-group input,
+        .checkbox-group input {
+            width: auto;
+            margin-right: 8px;
+        }
+
+        .required {
+            color: red;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            margin-top: 30px;
+            background: #111;
+            color: white;
+            border: none;
+            border-radius: 7px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #333;
+        }
+
+        .success {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background: #e8f7e8;
+            color: #216721;
+            border-radius: 6px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>🏸 Sihimoge Premier League 2026</h1>
+
+        <p><strong>Player Registration</strong></p>
+
+        <p>League Date: 6 December 2026</p>
+        <p>Auction Date: 15 November 2026</p>
+    </div>
+
+
+    <form id="registrationForm">
+
+        <!-- PLAYER DETAILS -->
+
+        <div class="section">
+
+            <h2>1. Player Details</h2>
+
+            <label>
+                Full Name <span class="required">*</span>
+            </label>
+
+            <input type="text"
+                   name="fullName"
+                   placeholder="Enter your full name"
+                   required>
+
+
+            <label>
+                Mobile / WhatsApp Number <span class="required">*</span>
+            </label>
+
+            <input type="tel"
+                   name="mobile"
+                   placeholder="Enter mobile number"
+                   required>
+
+
+            <label>
+                Email ID
+            </label>
+
+            <input type="email"
+                   name="email"
+                   placeholder="Enter email address">
+
+
+            <label>
+                Gender <span class="required">*</span>
+            </label>
+
+            <div class="radio-group">
+
+                <label>
+                    <input type="radio"
+                           name="gender"
+                           value="Male"
+                           required>
+                    Male
+                </label>
+
+                <label>
+                    <input type="radio"
+                           name="gender"
+                           value="Female">
+                    Female
+                </label>
+
+            </div>
+
+
+            <label>
+                Date of Birth <span class="required">*</span>
+            </label>
+
+            <input type="date"
+                   name="dob"
+                   required>
+		
+		<label>
+Player Photo <span class="required">*</span>
+</label>
+ 
+<input type="file"
+name="playerPhoto"
+accept="image/*"
+required>
+ 
+<label>
+Aadhar Card Photo <span class="required">*</span>
+</label>
+ 
+<input type="file"
+name="aadharPhoto"
+accept="image/*,.pdf"
+required>
+
+        </div>
+
+
+        
+
+        <!-- CATEGORY -->
+
+        <div class="section">
+
+            <h2>2. League Category</h2>
+
+            <p>
+                Select the category/categories you are eligible for.
+            </p>
+
+
+            <div class="radio-group">
+
+                <label>
+                    <input type="radio"
+                           name="category"
+                           value="G/N Open Doubles 1">
+                    G/N Open Doubles 1
+                </label>
+
+                <label>
+                    <input type="radio"
+                           name="category"
+                           value="G/N Open Doubles 2">
+                    G/N Open Doubles 2
+                </label>
+
+                <label>
+                    <input type="radio"
+                           name="category"
+                           value="30+ Men's Doubles">
+                    30+ Men's Doubles
+                </label>
+
+                <label>
+                    <input type="radio"
+                           name="category"
+                           value="40+ Men's Doubles">
+                    40+ Men's Doubles
+                </label>
+
+                <label>
+                    <input type="radio"
+                           name="category"
+                           value="85+ Jumbled">
+                    85+ Jumbled (50+ & 35+)
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <!-- AUCTION -->
+
+        <div class="section">
+
+            <h2>3. Auction</h2>
+
+
+            <label>
+                Will you participate in the player auction?
+                <span class="required">*</span>
+            </label>
+
+            <div class="radio-group">
+
+                <label>
+                    <input type="radio"
+                           name="auction"
+                           value="Yes"
+                           required>
+                    Yes
+                </label>
+
+                <label>
+                    <input type="radio"
+                           name="auction"
+                           value="No">
+                    No
+                </label>
+
+            </div>
+
+
+            <label>
+                Are you available on 6 December 2026?
+                <span class="required">*</span>
+            </label>
+
+            <div class="radio-group">
+
+                <label>
+                    <input type="radio"
+                           name="availability"
+                           value="Yes"
+                           required>
+                    Yes
+                </label>
+
+                <label>
+                    <input type="radio"
+                           name="availability"
+                           value="No">
+                    No
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <!-- JERSEY -->
+
+        <div class="section">
+
+            <h2>4. Jersey Details</h2>
+
+
+            <label>
+                Jersey Size <span class="required">*</span>
+            </label>
+
+            <select name="jerseySize" required>
+
+                <option value="">Select Size</option>
+
+                <option>XS</option>
+
+                <option>S</option>
+
+                <option>M</option>
+
+                <option>L</option>
+
+                <option>XL</option>
+
+                <option>XXL</option>
+
+                <option>XXXL</option>
+
+            </select>
+
+
+            <label>
+                Jersey Name
+            </label>
+
+            <input type="text"
+                   name="jerseyName"
+                   placeholder="Example: PADDA">
+
+        </div>
+
+
+
+        <!-- DECLARATION -->
+
+        <div class="section">
+
+            <h2>5. Declaration</h2>
+
+
+            <div class="checkbox-group">
+
+                <label>
+                    <input type="checkbox"
+                           required>
+                    I confirm that the information provided is accurate.
+                </label>
+
+
+                <label>
+                    <input type="checkbox"
+                           required>
+                    I agree to follow the league rules and regulations.
+                </label>
+
+
+                <label>
+                    <input type="checkbox"
+                           required>
+                    I understand that registration does not guarantee
+                    selection.
+                </label>
+
+
+                <label>
+                    <input type="checkbox"
+                           required>
+                    I agree to photographs/videos being used for
+                    league-related promotional purposes.
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <button type="submit">
+            🏸 Submit Registration
+        </button>
+
+
+        <div class="success" id="successMessage">
+
+            ✅ Registration submitted successfully!
+
+        </div>
+
+    </form>
+
+</div>
+
+
+<script>
+
+  const form = document.getElementById("registrationForm");
+
+const scriptURL = "https://script.google.com/macros/s/AKfycbzf08Pt00z_aSOTxXt4oAsT1dLhKiglGW08hnORkVWOhaCZczKG-tYZqQfir7cJ-Za6/exec";
+
+form.addEventListener("submit", async function(event) {
+
+    event.preventDefault();
+
+    const formData = new FormData(form);
+
+    const data = {};
+
+    formData.forEach((value, key) => {
+
+        if (data[key]) {
+
+            if (Array.isArray(data[key])) {
+                data[key].push(value);
+            } else {
+                data[key] = [data[key], value];
+            }
+
+        } else {
+
+            data[key] = value;
+
+        }
+
+    });
+
+    try {
+
+        await fetch(scriptURL, {
+
+            method: "POST",
+
+            mode: "no-cors",
+
+            headers: {
+                "Content-Type": "text/plain"
+            },
+
+            body: JSON.stringify(data)
+
+        });
+
+        document.getElementById("successMessage").innerHTML =
+            "✅ Registration submitted successfully!<br><br>" +
+            "Your registration has been received.";
+
+        document.getElementById("successMessage").style.display = "block";
+
+        form.reset();
+
+    } catch (error) {
+
+        alert("Registration failed. Please try again.");
+
+        console.error(error);
+
+    }
+
+});
+</script>
+
+</body>
+</html>
